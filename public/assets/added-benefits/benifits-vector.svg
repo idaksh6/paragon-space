@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="658.23" height="455" viewBox="0 0 658.23 455">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002e8c"/>
+      <stop offset="1" stop-color="#005ec6"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="658.23" height="455" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="benifits-vector" clip-path="url(#clip-path)">
+    <g id="round-vector">
+      <path id="Path_34" data-name="Path 34" d="M438.765,18.7A328.617,328.617,0,0,0,329.2,0C147.388,0,0,147.388,0,329.2H219.468a109.731,109.731,0,0,1,219.3-6.021V430.954A24.046,24.046,0,0,0,462.811,455H634.184a24.049,24.049,0,0,0,24.049-24.046V319.026C654.01,180.06,563.67,62.772,438.765,18.7" transform="translate(7)" fill="url(#linear-gradient)"/>
+      <path id="Path_35" data-name="Path 35" d="M438.765,18.7A328.617,328.617,0,0,0,329.2,0C147.388,0,0,147.388,0,329.2H219.468c0-60.606,28.96-133.422,113.021-172.656,89.841-41.934,161.151-20,216.059,13.746,98.278,60.4,109.685,148.735,109.685,148.735A329.548,329.548,0,0,0,438.765,18.7" transform="translate(0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

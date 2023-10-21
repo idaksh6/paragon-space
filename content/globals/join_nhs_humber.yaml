@@ -1,0 +1,67 @@
+title: 'Join NHS Humber'
+data:
+  title: 'Join Our Trust'
+  content:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Are you ready to become part of our Humbelievable team? We have a range of clinical and corporate roles online now that you can apply for today across Hull, East Yorkshire and North Yorkshire.'
+    -
+      type: heading
+      attrs:
+        level: 3
+      content:
+        -
+          type: text
+          text: 'Apply to:'
+    -
+      type: bulletList
+      content:
+        -
+          type: listItem
+          content:
+            -
+              type: paragraph
+              content:
+                -
+                  type: text
+                  text: 'Become part of an award winning, CQC ‘Good’ Trust.'
+        -
+          type: listItem
+          content:
+            -
+              type: paragraph
+              content:
+                -
+                  type: text
+                  text: 'Access training and development for the career you want.'
+        -
+          type: listItem
+          content:
+            -
+              type: paragraph
+              content:
+                -
+                  type: text
+                  text: 'Choose from flexible and remote roles.'
+        -
+          type: listItem
+          content:
+            -
+              type: paragraph
+              content:
+                -
+                  type: text
+                  text: 'Unlock our unique benefits package.'
+        -
+          type: listItem
+          content:
+            -
+              type: paragraph
+              content:
+                -
+                  type: text
+                  text: "Be a part of our friendly and welcoming team, feel valued and enjoy our 'Being Humber' culture."
+  image: home/nhs_humber_images/nhs-humber-left-image.png

@@ -1,0 +1,43 @@
+title: 'Site Configuration'
+data:
+  site_title: 'PARAGON SPACE'
+  site_logo: logo-favicon/paragon-logo.png
+  favicon:
+    - logo-favicon/paragon-logo.png
+  header_phone_icon: logo-favicon/np_phone-circle_5714585_000000.png
+  phone_number: '01482 890705'
+  copy_right_text:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: '© Copyright 2023, All Rights Reserved Paragon Space'
+  credit_note:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Design agency Hull at '
+        -
+          type: text
+          marks:
+            -
+              type: link
+              attrs:
+                href: 'https://www.eyeweb.co.uk/'
+                rel: null
+                target: _blank
+                title: null
+          text: Eyeweb
+  brand_color:
+    -
+      id: uVyCYuNN
+      denim: '#005EC6'
+      resolution_blue: '#003087'
+      aureolin: '#FAE100'
+      raisin_black: '#231F20'
+      white: '#FFFFFF'
+  button_text: 'CONTACT US'
+  button_link: /contact-us

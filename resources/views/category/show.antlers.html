@@ -1,0 +1,72 @@
+<section class="bg-[#E7EDEE] py-5 px-6">
+    <div class="container m-auto">
+        <ul class="breadcrumbs [&>*:nth-child(2)]:hidden divide-x divider divide-[var(--denim-color)] flex">
+            {{ nav:breadcrumbs }}
+            <li class="text-body-blue-color{{ if is_current }}current pl-3 text-[#231F20]{{ /if }}">
+                <a class="pr-3" href="{{ url }}">{{ title }}</a>
+            </li>
+            {{ /nav:breadcrumbs }}
+        </ul>
+    </div>
+</section>
+
+<section style="background-color: {{ color }}20;" class="px-6">
+    <div class="container m-auto">
+        <div class="text-center py-9">
+            <div class="mr-5">
+                <div style="background-color:{{ color }}; display:inline-block;"
+                    class="rounded-full p-6">
+                    <img class="w-6 h-6" src="{{ icon:url }}" />
+                </div>
+            </div>
+            <h1 class="text-black text-[45px]">{{ title }}</h1>
+            <p class="hyperlink">{{ description }}</p>
+        </div>
+    </div> 
+</section>
+
+
+
+<section class="px-6 pt-20">
+    <div class="container m-auto">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+            {{ collection from="benefits"  sort="date:desc" taxonomy:category="{{ segment_2 }}"  }}
+                
+                    {{ partial:benefits/card }}  
+                  
+            {{ /collection }}
+        </div>
+    </div>
+</section>
+<!-- Laura told to remove all testimonial blocks from all pages starts (https://eyeweb.teamwork.com/app/files/6319855)-->
+{{# <section class="px-6 pt-10">
+    <div class="container m-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+            {{ collection from="testimonials" sort="random" limit="2" }}
+        <div class="py-8 bg-cover bg-center text-left p-8 relative group overflow-hidden md:mb-8 rounded-lg">
+            <span class="overflow-hidden left-0 right-0 top-0 bottom-0 w-full h-full absolute bg-cover bg-center bg-no-repeat lg:group-hover:scale-110 transition-all duration-200 ease-in-out bg-top" style="background-image:  url({{ glide:image }});"></span>
+            <span class="left-0 right-0 top-0 bottom-0 absolute opacity-0 bg-black lg:group-hover:opacity-50 transition-all duration-200 ease-in-out"></span>
+            <span class="left-0 right-0 top-0 bottom-0 absolute bg-gradient-to-t md:from-[#000000a1] from-black"></span>
+            <div class="relative flex flex-wrap -mx-1 overflow-hidden mb-12 md:mb-0 mt-[40px] md:mt-[171px] lg:mt-[331px] ">
+                <div class="md:w-10/12 overflow-hidden relative">
+                        <svg class="w-9" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 83.224 61.812">
+                            <path id="Path_40" data-name="Path 40"
+                                d="M36.158-271.488a16.039,16.039,0,0,1,5.555,6.262,18.261,18.261,0,0,1,1.919,8.282,18.288,18.288,0,0,1-5.454,13.635,18.81,18.81,0,0,1-13.736,5.353,18.9,18.9,0,0,1-13.332-5.05q-5.454-5.05-5.454-13.736,0-7.07,5.05-14.948l17.776-28.078h19.19Zm41.208,0a16.039,16.039,0,0,1,5.555,6.262,18.261,18.261,0,0,1,1.919,8.282,18.288,18.288,0,0,1-5.454,13.635,18.81,18.81,0,0,1-13.736,5.353,18.9,18.9,0,0,1-13.332-5.05q-5.454-5.05-5.454-13.736,0-7.07,5.05-14.948L69.69-299.768H88.88Z"
+                                transform="translate(-5.656 299.768)" fill="#fff" />
+                        </svg>
+                    <h2 class="text-white font-medium">{{ title }}</h2>
+                    <div class="text-white">{{ content }}</div>
+                    <div class="text-white">{{ designation }}</div>
+                </div>
+            </div>
+        </div>
+        {{ /collection }}
+        </div>
+    </div>
+</section> #}}
+<!-- Laura told to remove all testimonial blocks from all pages ends -->
+
+ <!-- Join NHS Humber section -->
+ {{ partial:global.join_nhs_humber }}
+ <!-- Join NHS Humber section ends -->

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+
+    <meta>
+        {{ seo_pro:meta }}
+        {{ site_configuration:google_tag_manager }}
+        {{ site_configuration:analytics_tracking_code }}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? page_title ?? title }} - {{ site_configuration:site_title }}</title>
+        <meta name="title" content="{{ title }}" />
+        <link rel="stylesheet" href="/css/slick.css">
+        
+        <meta name='robots' content="{{ robots_tag }}" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+
+        <style> 
+            :root {
+                    
+                {{ site_configuration:brand_color }}
+                    
+                    --denim-color: {{ denim }};
+                    --resolution-blue-color: {{ resolution_blue }};
+                    --baureolin-color: {{ aureolin }};  
+                    --text-color: {{ raisin_black}};  
+                    --white-color: {{ white }};  
+                   
+                {{ /site_configuration:brand_color }}
+            }
+        </style>
+        {{site_configuration:facebook_pixel_code}}
+        
+    </head>
+    <body class="text-gray-800">
+        
+        <!-- Start Header -->
+        {{partial:global.nav}}
+        <!-- End Header -->
+
+        {{ template_content }}
+
+        {{ if is_homepage }} 
+        <!-- Join NHS Humber section -->
+        {{ partial:global.join_nhs_humber }}
+        <!-- Join NHS Humber section ends -->
+        {{ /if }}
+
+        {{ if is_homepage }} 
+        <!-- Signup form Start -->
+        {{ partial:global.signup_form }}
+        <!-- Signup form End -->
+        {{ /if }}
+
+        <!-- Logo section -->
+        {{ partial:global.logo_section }}
+        <!-- Logo section ends -->
+            
+        <!-- Start Footer -->
+        {{partial:global.footer}}
+        <!-- End Footer -->
+
+        <!-- Start Cookie Notice -->
+        {{# {{ cookie_notice }} #}}
+        {{# {{ oreos:popup }} #}}
+        <!-- End Cookie Notice -->
+        
+
+          <script src="/js/jquery-3.6.0.min.js"></script>
+          <script src="/js/slick.min.js"></script>
+          <script src="{{ mix src='/js/site.js' }}"></script>
+          <script src="/js/custom.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+/* Admin Panel CSS Override */
+body.outside.rad-theme {
+    background: #f9fafa;
+}
+
+.email-login .outside.rad-theme .btn-dropdown-primary, .outside.rad-theme .btn-primary {
+    background: #013088 !important;
+}
+
+.email-login .outside.rad-theme .btn-dropdown-primary, .outside.rad-theme .btn-primary:hover {
+    background: #013088 !important;
+}
+

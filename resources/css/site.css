@@ -1,0 +1,553 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: HUMBER TEACHING NHS FOUNDATION TRUST
+    Description: HUMBER TEACHING NHS FOUNDATION TRUST
+    Author: Eyeweb
+    Version: 1.0
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    01. Theme default CSS
+    02. Color CSS
+    03. Navigation Burger CSS
+    04. Mobile Menu CSS
+    05. KB Search Block CSS
+    06. Home CSS
+    07. About Us CSS
+    08. VAT CSS
+    09. Footer CSS
+    10. FAQ CSS
+    11. Contact Us CSS
+    12. Exporting CSS
+    13. Importing CSS
+    14. News CSS
+    15. Sign IN CSS
+    16. News Pagination CSS
+    17. Key Feature CSS
+    18. Legal Page CSS
+    19. Bullet CSS
+    20. Our team image CSS
+    21. Recaptcha Hide
+    22. Hyperlink underline CSS
+    23. Media Queries   
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+.text-join-nhs p {
+    font-size: 16px;
+}
+
+.text-benifits-nhs p {
+    font-size: 16px;
+}
+
+.text-benifits-nhs h3 {
+    padding-bottom: 1rem;
+}
+
+/** Bullet css **/
+.bullet ul {
+
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+
+
+
+/*----------------------------------------*/
+/*  02. Custom List CSS
+/*----------------------------------------*/
+
+.custom-list ul li::before {
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    background-image: url("/assets/home/nhs_humber_images/liststyle.svg");
+    background-size: 15px 20px;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    content: "";
+}
+
+.custom-list ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.custom-list h3 {
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+
+.text-base-benifits p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/*----------------------------------------*/
+/*  02. Single Benefit Page CSS
+/*----------------------------------------*/
+
+.single-benefit .join-single-benefit {
+    display: grid;
+}
+
+.single-benefit .join-single-benefit h2 {
+    padding-top: 2rem;
+}
+
+.single-benefit .join-single-benefit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.single-benefit .bg-gray-class{
+    background-color: #E7ECEF;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*----------------------------------------*/
+/*  03. Newsletter SignUp  CSS
+/*----------------------------------------*/
+.custom-field input {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 1rem;
+}
+
+.custom-field:nth-child(3) label {
+    color: black;
+    border: solid 1px #7e7e7e;
+    background: #e7edee;
+    padding: 16px;
+    border-radius: 5px;
+    display: block;
+    text-align: center; /* new added change */
+}
+
+.custom-field:nth-child(3) label:first-child {
+    display: none;
+}
+
+.custom-field label {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.custom-field input[type="checkbox"] {
+    width: 2rem;
+    margin-right: 12px;
+    height: 2rem;
+    position: relative;
+    top: 21px;
+}
+
+.custom-field:last-child {
+    display: block;
+}
+
+@media(max-width:1024px)
+{
+    .custom-field:nth-child(3) label{
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+/**
+* Benifits Category Single Page CSS
+*/
+.card {
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 350px;
+}
+
+.card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #777;
+}
+@media only screen and (max-width: 600px) {
+ button.slick-next.slick-arrow ,.slick-prev.slick-arrow {
+        display: none !important ;
+    }
+}
+@media only screen and (width: 768px) {
+    button.slick-next.slick-arrow ,.slick-prev.slick-arrow {
+           display: none !important ;
+       }
+   }
+/*
+* Slick slider CSS
+*/
+.testimonials-slider .image-side {
+    width: 350px;
+}
+
+.testimonials-slider .content p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.testimonials-slider
+    .image-side
+    .slick-slide
+    .slick-current
+    .slick-active
+    p.content {
+    font-size: 20px !important;
+}
+
+.slider.testimonials-slider {
+    display: flex;
+}
+
+.testimonials-slider .slick-track {
+    will-change: transform;
+}
+
+.testimonials-slider .slick-list {
+    overflow: hidden;
+    will-change: transform;
+}
+
+.testimonials-slider .slick-slide {
+    padding: 10px;
+    margin: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+    height: 27rem;
+}
+
+.testimonials-slider .slick-slide img {
+    height: 100vh;
+    max-height: 80vh;
+    width: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.testimonials-slider .slick-current {
+    width: 40rem;
+}
+
+.testimonials-slider .slick-current img {
+    width: 40rem !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials-slider .slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials-slider .slick-slide img {
+    height: 300px;
+    width: 200px;
+}
+/* .testimonials-slider button.slick-next.slick-arrow {
+    position: absolute;
+    top: 360px;
+    left: 524px;
+    font-size: 16px;
+    background-color: #005ec6; 
+    border-radius: 5px;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+} */
+
+.testimonials-slider button.slick-next.slick-arrow {
+    position: absolute;
+    top: 360px;
+    left: 524px;
+    font-size: 16px;
+    background-color: #005ec6;
+    border-radius: 5px;
+    color: white;
+    padding: 14px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .testimonials-slider button.slick-next.slick-arrow::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(/assets/quote-and-images/np_chevron_2344327_000000.svg); /* Replace this with the path to your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    position: absolute;
+    top: 19px;
+  }
+
+
+.testimonials-slider button.slick-next.slick-arrow:hover {
+    background-color: #0054b2;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .testimonials-slider button.slick-next.slick-arrow {
+        display: none !important ;
+    }
+}
+@media only screen and(max-width:600px) {
+    .testimonials-slider .image-side {
+        display: none;
+    }
+}
+
+.testimonials-slider button.slick-prev.slick-arrow {
+    display: none !important;
+}
+
+
+.thank-you-font{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Text line restrictions */
+.textdgdsg {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+ }
+
+/*----------------------------------------*/
+/*  04. Media Queries 
+/*----------------------------------------*/
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    h4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    h1 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 67px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 65px;
+        line-height: 86px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1194px !important;
+    }
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+
+  .hyperlink a {
+    text-decoration: underline;
+    color:#0054b2 ;
+  }

@@ -1,0 +1,169 @@
+<section class="bg-[#E7EDEE] px-6 py-5">
+    <div class="container m-auto">
+        {{# <ul class="breadcrumbs divide-x divider divide-[var(--denim-color)] flex">
+            {{ nav:breadcrumbs }}
+              <li class="text-body-blue-color{{ if is_current }}current pl-3 text-[#231F20]{{ /if }}">
+                <a class="pr-3" href="{{ url }}">{{ title }}</a>
+              </li>
+            {{ /nav:breadcrumbs }}
+            
+            {{ nav:breadcrumbs }}
+
+            <li class="text-body-blue-color{{ if is_current }}current pl-3 text-[#231F20]{{ /if }}">
+                {{ category }}
+                <a href="{{ url }}">{{ title }}</a>
+                {{ /category }}
+            </li>
+            
+            {{ /nav:breadcrumbs }}
+
+
+
+          </ul> #}}
+
+          
+           
+          <nav aria-label="breadcrumb">
+            <ul class="breadcrumbs divide-x divider divide-[var(--denim-color)] flex">
+                <li class="breadcrumb-item pr-3 text-body-blue-color"><a href="/">Home</a></li>
+                {{ category }}
+                    <li class="breadcrumb-item px-3 text-body-blue-color"><a href="/category/{{ url | segment(3) }}">{{ title }}</a></li>
+                {{ /category }}
+                <li class="breadcrumb-item active pl-3 text-[#231F20]" aria-current="page">{{ benefits_title }}</li>
+            </ul>
+        </nav>
+          
+    </div>
+</section>
+
+{{ collection from="benefits" slug:is="url" }}
+    {{ relate:category }}
+<section class="px-6" style="background-color: {{ color }}20;">
+    <div class="container m-auto">
+    <div class="flex items-center">
+        
+         <div>
+            <div style="background-color:{{ color }}; display:inline-block;"
+            class="rounded-full p-4">
+            <img class="w-6 h-6" src="{{ icon:url }}" />
+        </div>
+         </div>
+        <h1 class="text-black text-[45px] pl-2">{{ benefits_title }}</h1>
+            
+    </div>
+    </div>
+  
+</section>
+{{ /relate:category }}
+{{ /collection }}
+
+
+<section class="py-8 px-6">
+    <div class="container m-auto">
+        <div class="md:grid grid-cols-2 gap-8 bullet">
+            <div class="text-benifits-nhs hyperlink">
+                {{ benefit_title }}
+                {{ content }}
+                
+            </div>
+            <div>
+                {{ if how_to_claim_benefits_button }}
+                <div class="border-t-8 border-body-blue-color bg-[#E7EDEE] p-7 grid">
+                    <h2>{{ how_to_claim_this_benefit_heading }}</h2>
+
+                    {{ if end_date_for_benefit }}
+                    <span class="text-body-blue-color py-4">Benefit end date: {{ benefit_end_date iso_format="DD/MM/YYYY" }}</span>
+                    {{ endif }}
+                    {{# <p class="text-base"></p> #}}
+                    <div class="text-base-benifits py-2 hyperlink" >
+                        {{ how_to_claim_this_benefit }}
+                    </div>
+                    
+
+                    {{# <a class="primary-color bg-body-blue-color text-base font-semibold text-white rounded-md px-16 py-2.5 text-center mr-3 xl:w-[60%] w-full"
+                    href="{{ button_link }}">{{ button_text }}</a> #}}
+                    {{ if button_link }}
+                    <a class="primary-color bg-body-blue-color hover:bg-[#0054b2] text-base font-semibold text-white rounded-md px-16 py-2.5 text-center mr-3 xl:w-[60%] w-full"
+                        target="_blank" href="{{ button_link }}">{{ button_text }}</a>
+                    {{ endif }}
+
+                </div>
+                {{ endif }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- By Laura's comment we removed this block starts here -->
+{{# <section class="">
+    <div class="container m-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+            {{ collection from="testimonials" sort="random" limit="1" }}
+        <div class="py-8 px-6 bg-cover bg-center text-left p-8 relative group overflow-hidden md:mb-8 rounded-lg h-96 md:h-auto">
+            <span class="overflow-hidden left-0 right-0 top-0 bottom-0 w-full h-full absolute bg-cover bg-center bg-no-repeat lg:group-hover:scale-110 transition-all duration-200 ease-in-out bg-top" style="background-image:  url({{ glide:image }});"></span>
+            <span class="left-0 right-0 top-0 bottom-0 absolute opacity-0 bg-black lg:group-hover:opacity-50 transition-all duration-200 ease-in-out"></span>
+            <span class="left-0 right-0 top-0 bottom-0 absolute bg-gradient-to-t md:from-[#000000a1] from-black"></span>
+            <div class="absolute flex flex-wrap -mx-1 overflow-hidden mb-12 bottom-0">
+                <div class="md:w-10/12 overflow-hidden relative">
+                        <svg class="w-9 mb-4" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 83.224 61.812">
+                            <path id="Path_40" data-name="Path 40"
+                                d="M36.158-271.488a16.039,16.039,0,0,1,5.555,6.262,18.261,18.261,0,0,1,1.919,8.282,18.288,18.288,0,0,1-5.454,13.635,18.81,18.81,0,0,1-13.736,5.353,18.9,18.9,0,0,1-13.332-5.05q-5.454-5.05-5.454-13.736,0-7.07,5.05-14.948l17.776-28.078h19.19Zm41.208,0a16.039,16.039,0,0,1,5.555,6.262,18.261,18.261,0,0,1,1.919,8.282,18.288,18.288,0,0,1-5.454,13.635,18.81,18.81,0,0,1-13.736,5.353,18.9,18.9,0,0,1-13.332-5.05q-5.454-5.05-5.454-13.736,0-7.07,5.05-14.948L69.69-299.768H88.88Z"
+                                transform="translate(-5.656 299.768)" fill="#fff" />
+                        </svg>
+                    <div class="text-white w-[90%] md:w-full">{{ content }}</div>
+                    <h2 class="text-white font-medium">{{ title }}</h2>
+                    <div class="text-white">{{ designation }}</div>
+                </div>
+            </div>
+        </div>
+        {{ /collection }}
+        <div class="single-benefit">
+            
+ <!-- Join NHS Humber section -->
+ {{ partial:global.join_nhs_humber }}
+ <!-- Join NHS Humber section ends -->
+        </div>
+        </div>
+    </div>
+</section> #}}
+
+<!-- By Laura's comment we removed this block ends here -->
+
+{{# <section id="added_benefits" class="bg-body-blue-color pt-12 pb-[70px] px-6" style="background: #003087 0% 0% no-repeat padding-box;">
+    <div class="container m-auto ">
+        <div class=" relative z-10 text-center pt-5">
+            <h3 class="text-white-color pt-2 pb-3">Related benefits</h3>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4  relative z-10">
+            {{ collection from="benefits" taxonomy:category="{{ segment_1 }}" }}
+               {{ relate:category }}
+                    {{ partial:benefits/card }}
+                {{ /relate:category }}
+            {{ /collection }}
+        </div>
+    </div>
+</section> #}}
+<section id="added_benefits" class="bg-body-blue-color pt-12 pb-[70px] px-6" style="background: #003087 0% 0% no-repeat padding-box;">
+    <div class="container m-auto">
+        <div class="relative z-10 text-center">
+            <h3 class="text-white-color pb-6">Related benefits</h3>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+               
+            {{ collection from="benefits" sort="date:desc" taxonomy:category="{{ segment_1 }}"  }}
+              
+                    {{ partial:benefits/card }} 
+                
+            {{ /collection }}
+
+        </div>
+            
+    </div>
+</section>
+
+<style>
+
+</style>
+
+

@@ -1,0 +1,541 @@
+title: 'Page Sections'
+fields:
+  -
+    handle: page_sections
+    field:
+      collapse: false
+      previews: true
+      sets:
+        main:
+          display: Main
+          instructions: null
+          icon: null
+          sets:
+            hero_section:
+              display: 'Hero Section'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: main_section
+                  field:
+                    mode: stacked
+                    reorderable: true
+                    display: 'Main Section'
+                    type: grid
+                    icon: grid
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    fields:
+                      -
+                        handle: quote_upper_image
+                        field:
+                          max_files: 1
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          show_set_alt: true
+                          type: assets
+                          display: 'Quote Upper Image'
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                      -
+                        handle: quote_content
+                        field:
+                          antlers: false
+                          type: textarea
+                          display: 'Quote Content'
+                          icon: textarea
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                      -
+                        handle: hero_banner_image
+                        field:
+                          max_files: 1
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          show_set_alt: true
+                          type: assets
+                          display: 'Hero Banner Image'
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                      -
+                        handle: banner_background_image
+                        field:
+                          max_files: 1
+                          mode: list
+                          container: assets
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          show_set_alt: true
+                          type: assets
+                          display: 'Banner Background Image'
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                          visibility: visible
+                          hide_display: false
+                    max_rows: 1
+                    min_rows: 1
+                    fullscreen: true
+                    hide_display: false
+            we_build_modular_buildings:
+              display: 'We build modular buildings'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: heading
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: Heading
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: contents
+                  field:
+                    antlers: false
+                    type: textarea
+                    display: Contents
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+            home_grid:
+              display: 'Home Grid'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: grid_1
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        instructions: null
+                        icon: null
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            instructions: null
+                            icon: null
+                            fields:
+                              -
+                                handle: background_image
+                                field:
+                                  max_files: 1
+                                  mode: list
+                                  container: assets
+                                  restrict: false
+                                  allow_uploads: true
+                                  show_filename: true
+                                  show_set_alt: true
+                                  type: assets
+                                  display: 'Background Image'
+                                  icon: assets
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: upper_box_image
+                                field:
+                                  collapse: false
+                                  previews: true
+                                  max_sets: 2
+                                  fullscreen: true
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      instructions: null
+                                      icon: null
+                                      sets:
+                                        new_set:
+                                          display: 'New Set'
+                                          instructions: null
+                                          icon: null
+                                          fields:
+                                            -
+                                              handle: box_image
+                                              field:
+                                                max_files: 1
+                                                mode: list
+                                                container: assets
+                                                restrict: false
+                                                allow_uploads: true
+                                                show_filename: true
+                                                show_set_alt: true
+                                                type: assets
+                                                display: 'Box Image'
+                                                icon: assets
+                                                listable: hidden
+                                                instructions_position: above
+                                                visibility: visible
+                                                hide_display: false
+                                  type: replicator
+                                  display: 'Upper Box Image'
+                                  icon: replicator
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: heading
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: Heading
+                                  icon: text
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: contents
+                                field:
+                                  antlers: false
+                                  type: textarea
+                                  display: Contents
+                                  icon: textarea
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: button_text
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: 'Button Text'
+                                  icon: text
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: button_link
+                                field:
+                                  type: link
+                                  display: 'Button Link'
+                                  icon: link
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: button_border_color
+                                field:
+                                  allow_any: true
+                                  type: color
+                                  display: 'Button Border Color'
+                                  icon: color
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                    type: replicator
+                    display: 'Grid 1'
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: grid_2
+                  field:
+                    collapse: false
+                    previews: true
+                    fullscreen: true
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        instructions: null
+                        icon: null
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            instructions: null
+                            icon: null
+                            fields:
+                              -
+                                handle: have_background_video
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Background Video?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: video_field
+                                field:
+                                  type: video
+                                  display: 'Video Field'
+                                  icon: video
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_background_video: 'equals true'
+                              -
+                                handle: have_heading
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Heading ?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: heading
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: Heading
+                                  icon: text
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_heading: 'equals true'
+                              -
+                                handle: have_content
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Content?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: contents
+                                field:
+                                  antlers: false
+                                  type: textarea
+                                  display: Contents
+                                  icon: textarea
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_content: 'equals true'
+                              -
+                                handle: have_list_contents
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have List Contents?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: list_contents
+                                field:
+                                  collapse: false
+                                  previews: true
+                                  max_sets: 3
+                                  fullscreen: true
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      instructions: null
+                                      icon: null
+                                      sets:
+                                        new_set:
+                                          display: 'New Set'
+                                          instructions: null
+                                          icon: null
+                                          fields:
+                                            -
+                                              handle: list_icon
+                                              field:
+                                                max_files: 1
+                                                mode: list
+                                                container: assets
+                                                restrict: false
+                                                allow_uploads: true
+                                                show_filename: true
+                                                show_set_alt: true
+                                                type: assets
+                                                display: 'List Icon'
+                                                icon: assets
+                                                listable: hidden
+                                                instructions_position: above
+                                                visibility: visible
+                                                hide_display: false
+                                            -
+                                              handle: list_title
+                                              field:
+                                                input_type: text
+                                                antlers: false
+                                                type: text
+                                                display: 'List Title'
+                                                icon: text
+                                                listable: hidden
+                                                instructions_position: above
+                                                visibility: visible
+                                                hide_display: false
+                                  type: replicator
+                                  display: 'List Contents'
+                                  icon: replicator
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_list_contents: 'equals true'
+                              -
+                                handle: have_button
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Button?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: button_text
+                                field:
+                                  input_type: text
+                                  antlers: false
+                                  type: text
+                                  display: 'Button Text'
+                                  icon: text
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_button: 'equals true'
+                              -
+                                handle: button_link
+                                field:
+                                  type: link
+                                  display: 'Button Link'
+                                  icon: link
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_button: 'equals true'
+                              -
+                                handle: button_color
+                                field:
+                                  allow_any: true
+                                  type: color
+                                  display: 'Button Color'
+                                  icon: color
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_button: 'equals true'
+                              -
+                                handle: have_background_color
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Background Color?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: background_color
+                                field:
+                                  allow_any: true
+                                  type: color
+                                  display: 'Background Color'
+                                  icon: color
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                                  if:
+                                    have_background_color: 'equals true'
+                              -
+                                handle: have_background_image
+                                field:
+                                  default: false
+                                  type: toggle
+                                  display: 'Have Background Image?'
+                                  icon: toggle
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                              -
+                                handle: background_image1
+                                field:
+                                  max_files: 1
+                                  mode: list
+                                  container: assets
+                                  restrict: false
+                                  allow_uploads: true
+                                  show_filename: true
+                                  show_set_alt: true
+                                  type: assets
+                                  display: 'Background Image1'
+                                  icon: assets
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  hide_display: false
+                    type: replicator
+                    display: 'Grid 2'
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+      display: 'Page Sections'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      fullscreen: true

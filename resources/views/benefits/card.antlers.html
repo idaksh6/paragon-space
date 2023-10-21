@@ -1,0 +1,18 @@
+<div class="bg-white rounded-md">
+    {{category}}
+    <div style="border-color: {{ color }}; cursor: pointer;"
+onmouseover="this.style.backgroundColor='{{ color }}20';" onmouseout="this.style.backgroundColor='white';"
+class="border rounded-md hover:bg-[{{ color }}] h-[300px]">  
+        <div class="p-6 flex flex-col justify-between h-full">
+            <div>
+                <h5 style="color: {{ color }}">{{ title }}</h5>
+    {{/category}}
+                <h3 class="py-5 ">{{ benefits_title }}</h3>
+                <p class="mb-6 textdgdsg text-sm">{{ sub_title }}</p>
+            </div>
+            <div class="text-center font-semibold ">
+                <a href="{{ url }}" class="hover:bg-body-blue-color hover:text-white text-body-blue-color px-6 py-3 rounded-md text border-body-blue-color border block m-auto w-11/12">View</a>
+            </div>
+        </div>
+    </div>
+</div>

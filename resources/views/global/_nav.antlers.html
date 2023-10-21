@@ -1,0 +1,107 @@
+<!-- Desktop Header -->
+<nav class="hidden xl:block sticky top-0 z-50">
+    <div class="bg-[#082427]">
+        <div class="container flex flex-wrap justify-between items-center mx-auto py-[26px]">
+            <!-- LOGO SECTION-->
+            <div class="flex">
+                <a class="max-w-xs" href="/">
+                    <img class="w-40" src="{{ site_configuration:site_logo }}"
+                        alt="{{ site_configuration:site_logo.alt }}">
+                </a>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <!-- PHONE ICON-->
+                <div class="bg-[#45AFBD] w-[26px] h-[45px] flex items-center justify-center">
+                    <div class="bg-white rounded-full">
+                        <img src="{{ site_configuration:header_phone_icon }}" alt="">
+                    </div>
+                </div>
+                <!-- GET IN TOUCH-->
+                <div>
+                    <p class="text-[#45AFBD] text-base mb-0">Get in touch</p>
+                </div>
+                <!--PHONE NUMBER -->
+                <div>
+                    <p class="text-[#FFFFFF] text-base mb-0">{{ site_configuration:phone_number }}</p>
+                </div>
+                <div>
+                    <a class="primary-color bg-[#45AFBD] text-base] font-semibold text-white  px-[58px] py-3 text-center mr-3"
+                        target="_blank"
+                        href="{{ site_configuration:button_link }}">Contact US</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#003F46] text-center top-0 w-full z-50" id="stickyHeader">
+            <div class="container py-4  mx-auto">
+                <ul class="flex gap-[55px] items-center justify-center">
+                    {{ nav:primary_menu }}
+                    <li
+                        class="relative block group items-center  {{ if is_current || is_parent }}  py-2 rounded-full  {{ /if }}">
+                        {{ if children }}
+
+                        <div class="font-bold  px-5 py-3.75  " {{ if is_current }} class="active" {{
+                   endif }}>
+                            {{ title }}
+                        </div>
+
+                        <ul class="z-20 absolute top-[3.30rem]  w-64 invisible group-hover:visible bg-[#00234b] py-7">
+
+                            <!-- LEVEL ONE CHILD NAVS -->
+                            {{ children }}
+                            <a href="{{ url }}" class="block py-1.5 px-8    {{ if is_current }} {{ /if }}">
+                                <li class="font-bold">
+                                    {{ title }}
+                                </li>
+                            </a>
+                            {{ /children }}
+                            <!-- LEVEL ONE CHILD NAVS ENDS -->
+
+
+                        </ul>
+                        {{ else }}
+                        <a href="{{ url }}" class=""
+                            style="color: {{ (is_current) ? '#45AFBD' : '#FFFFFF' }};">
+                            <div class="font-semibold py-3.75 hover:text-[#45AFBD]">
+                                {{ title }}
+                            </div>
+                        </a>
+
+                        {{ endif }}
+                    </li>
+                    {{ /nav:primary_menu }}
+                </ul>
+            </div>
+        </div>
+</nav>
+
+<!-- Mobile Header -->
+<nav class="xl:hidden flex-col lg:flex-row  ">
+    <div class="flex flex-wrap justify-between items-center bg-[] p-7">
+        <div class="w-32 md:w-48">
+            <a class="max-w-xs" href="/">
+                <img src="{{ site_configuration:site_logo }}" alt="{{ site_configuration:site_logo.alt }}">
+            </a>
+        </div>
+        <div class="burger xl:hidden">
+            <div class="bar1 h-0.5 w-9 mb-1 bg-resolution-blue-color duration-300"></div>
+            <div class="bar2 h-0.5 w-9 mb-1 bg-resolution-blue-color"></div>
+            <div class="bar3 h-0.5 w-9 bg-resolution-blue-color duration-300"></div>
+        </div>
+    </div>
+    <div class="links xl:flex flex-col xl:flex-row text-center bg-white w-full xl:justify-around hidden">
+        <ul class="ml-2 pt-6 text-left">
+            {{ nav:primary_menu }}
+            <li
+                class="px-2 pb-6 last:pb-6 text-2xl text-white-color font-semibold {{ if is_current }} primary-menu-active {{ endif }}">
+                <a href="{{ url }}" {{ if is_external }} {{ /if }} class=" hover:text-[#45AFBD] py-2 px-4 rounded-full"
+                    {{ if is_current }} class="current"
+                    style="color: {{ (is_current) ? '#45AFBD' : '#231F20' }};"
+                    {{ /if }}>
+                    {{ title }}
+                </a>
+            </li>
+            {{ /nav:primary_menu }}
+        </ul>
+    </div>
+</nav>

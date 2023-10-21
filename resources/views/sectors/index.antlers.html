@@ -1,0 +1,9 @@
+<section>
+    {{ collection:sectors as="posts" paginate="9" sort="date:asc" }}
+    {{ posts }}
+    <div>
+        <h3>{{title}}</h3>
+    </div>
+    {{ /posts }}
+    {{ /collection:sectors }}
+</section>

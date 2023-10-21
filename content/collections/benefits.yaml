@@ -1,0 +1,16 @@
+title: Benefits
+template: benefits/show
+layout: layout
+taxonomies:
+  - category
+revisions: false
+route: '{parent_uri}/{category}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
